@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-color: #3f3e3e;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    border: rgb(111, 108, 108);
+    border-radius: 10px;
+}
+.inputManage{
+    margin-top: 10px;
+}
+#deFault{
+    width: 320px;
+    height: 150px;
+    border: none;
+    outline: none;
+    position: relative;
+    left: 190px;
+    background-color: #746e6e;
+    color: #fff;
+    font-size: 31px;
+    font-weight: bold;
+    text-align: right;
+}
+.grid-containers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 120px;
+    margin-right: 30px;
+    column-gap: 30px;
+    row-gap: 30px;
+    position: relative;
+    right: 130px;
+    top: 30px;
+    background-color: black;
+    padding: 15px;
+
+}
+.grid-containers >div >button{
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 20px 20px 40px rgb(40, 39, 39);
+    border: none;
+    background-color: #1e1c1c;
+    color: #fff;
+}
+.grid-containers >div >button:hover{
+    background-color: #c1acac;
+    border-radius: 120px;
+    /* clip-path: circle(100%); */
+    /* width: 35px;
+    height: 35px;
+    border-radius: 50%; */
+}
+#numEquals{
+    background-color: #2b2be5;
+    color: #fff;
+    height: 130px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#numEquals:hover{
+    background-color: #4410b4;
+}
+#clear, #numDivide, #numMultiply, #numPlus, #numMinus{
+    color: #2b2be5;
+}
+
+#numTimes{
+    border: 1px solid #2b2be5;
+    color: #2b2be5;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+.blue{
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column: 4;
+}
+#numDot{
+    padding-top: 10px;
+}
+.line{
+    color: rgb(83, 81, 81);
+    width: 45px;
+    text-align: center;
+    position: relative;
+    left: 335px;
+    height: 5px;
+    top: 125px;
+    z-index: 100;
+    background-color: #b0a8a8;
+    border: none;
+    outline: none;
+}

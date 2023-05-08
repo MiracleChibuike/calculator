@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="inputManage">
+            <!-- <i class="fa fa-window-minimize" style="color: white; font-size: 25px;" ></i> -->
+            <hr class="line">
+            <input type="text" id="deFault" name="txt" />
+        </div>
+        <div class="grid-containers">
+                <div> <button id="clear" onclick="clearAllinput()"  value= 'clear input' >C</button></div>
+                <div><button id="numDivide" onclick="show('/')" value="/" >&divide;</button></div>
+                <div><button id="numMultiply" onclick="show('*')" value="*">x</button></div>
+                <div><button id="numTimes" >&times;</button></div>
+                 <div><button id="num1" onclick="show(7)" value="7">7</button></div>
+                 <div class="display"><button id="num" onclick="show(8)" value="8">8</button></div>
+                 <div><button class="num" onclick="show(9)" value="9">9</button></div>
+                 <div><button id="numMinus" onclick="show('-')" value="-">&minus;</button></div>
+                 <div> <button class="num" onclick="show(4)"  value="4">4</button></div>
+                 <div><button class="num"onclick="show(5)"  value="5">5</button></div>
+                 <div><button class="num" onclick="show(6)"  value="6">6</button></div>
+                 <div><button id="numPlus"onclick="show('+')"  value="+">&plus;</button></div>
+                  <div> <button class="num" onclick="show(1)"  value="1">1</button></div>
+                  <div><button class="num" onclick="show(2)"  value="2">2</button></div>
+                  <div><button class="num" onclick="show(3)"  value="3">3</button></div>
+                  <div class="blue"><button id="numEquals"  value="=">&equals;</button></div>
+                  <div><button id="numPercent" onclick="show('%')" value="%">&percnt;</button></div>
+                  <div><button class="num" onclick="show(0)"  value="0">0</button></div>
+                  <div><button id="numDot" onclick="show('.')" value=".">&dot;</button></div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
